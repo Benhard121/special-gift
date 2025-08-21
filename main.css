@@ -1658,15 +1658,13 @@ audio {
 
 .message-container {
   position: absolute;
-  top: 20%; /* turunkan agar berada di bawah audio player */
+  top: 15%; /* coba 15% atau 18% supaya pas di tengah atas, di bawah audio */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  z-index: 100;
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out 1s forwards;
   width: 100%;
 }
+
 
 .message-container p {
   font-size: 1.8rem; /* kecil dan rapi */
