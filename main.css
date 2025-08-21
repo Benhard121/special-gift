@@ -1657,29 +1657,22 @@ audio {
 }
 
 .message-container {
-    position: absolute;
-    top: 5%; /* lebih ke atas supaya tidak nutupi bunga */
-    left: 50%;
-    transform: translateX(-50%); /* hanya center horizontal */
-    text-align: center;
-    z-index: 100;
-    opacity: 0;
-    animation: fadeIn 2s ease-in-out 1s forwards;
-    width: 100%;
+  position: absolute;
+  top: 20%; /* turunkan agar berada di bawah audio player */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 100;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 1s forwards;
+  width: 100%;
 }
 
 .message-container p {
-    font-size: 1.8rem; /* lebih kecil */
-    color: #fff;
-    font-weight: bold;
-    text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4;
-}
-
-
-.message-container p {
+  font-size: 1.8rem; /* kecil dan rapi */
   color: #fff;
   font-weight: bold;
-  text-shadow: 0 0 15px #ff69b4, 0 0 25px #ff69b4, 0 0 40px #ff69b4;
+  text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4;
 }
 
 @keyframes fadeIn {
