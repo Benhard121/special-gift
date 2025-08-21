@@ -1656,24 +1656,21 @@ audio {
   border-radius: 5px; /* Border radius kotak putih */
 }
 
-audio {
-  margin-top: 20px; /* jarak dari atas */
-  z-index: 200;
+.message-container {
+  position: absolute;
+  top: 10%; /* coba 15% atau 18% supaya pas di tengah atas, di bawah audio */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
 }
 
-/* Container teks */
-.message-container {
-  text-align: center;
-  margin-top: 15px; /* jarak pas di bawah audio */
-}
 
 .message-container p {
-  font-size: 1.8rem; /* atur kecil/besar */
+  font-size: 1.8rem; /* kecil dan rapi */
   color: #fff;
   font-weight: bold;
-  text-shadow: 0 0 5px #ff69b4,
-               0 0 10px #ff69b4,
-               0 0 15px #ff69b4;
+  text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4;
 }
 
 @keyframes fadeIn {
