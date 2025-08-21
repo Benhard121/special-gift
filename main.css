@@ -212,49 +212,49 @@ body {
 }
 
 .flower--4 {
-    left: 25%;
+    left: 38%;
     transform: rotate(-10deg);
     -webkit-animation: moving-flower-3 4s linear infinite;
     animation: moving-flower-3 4s linear infinite;
 }
 .flower--5 {
-    left: 75%;
+    left: 62%;
     transform: rotate(10deg);
     -webkit-animation: moving-flower-2 4s linear infinite;
     animation: moving-flower-2 4s linear infinite;
 }
 .flower--6 {
-    left: 10%;
+    left: 30%;
     transform: rotate(-5deg);
     -webkit-animation: moving-flower-1 4s linear infinite;
     animation: moving-flower-1 4s linear infinite;
 }
 .flower--7 {
-    left: 90%;
+    left: 70%;
     transform: rotate(5deg);
     -webkit-animation: moving-flower-2 4s linear infinite;
     animation: moving-flower-2 4s linear infinite;
 }
 .flower--8 {
-    left: 40%;
+    left: 45%;
     transform: rotate(-15deg);
     -webkit-animation: moving-flower-3 4s linear infinite;
     animation: moving-flower-3 4s linear infinite;
 }
 .flower--9 {
-    left: 60%;
+    left: 55%;
     transform: rotate(15deg);
     -webkit-animation: moving-flower-1 4s linear infinite;
     animation: moving-flower-1 4s linear infinite;
 }
 .flower--10 {
-    left: 20%;
+    left: 35%;
     transform: rotate(-10deg);
     -webkit-animation: moving-flower-2 4s linear infinite;
     animation: moving-flower-2 4s linear infinite;
 }
 .flower--11 {
-    left: 80%;
+    left: 65%;
     transform: rotate(10deg);
     -webkit-animation: moving-flower-3 4s linear infinite;
     animation: moving-flower-3 4s linear infinite;
@@ -1633,10 +1633,7 @@ body {
     transform: scale(0);
   }
 }
-.container * {
-  -webkit-animation-play-state: paused !important;
-  animation-play-state: paused !important;
-} /*# sourceMappingURL=main.css.map */
+ /*# sourceMappingURL=main.css.map */
 
 /* Mengatur kontrol audio di bagian paling atas */
 audio {
