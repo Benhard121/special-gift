@@ -1668,10 +1668,13 @@ audio {
 
 
 .-container p {
-  font-size: 1.8rem; /* kecil dan rapi */
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
   color: #fff;
   font-weight: bold;
   text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 1s forwards;
 }
 
 .-container h2 {
@@ -1685,5 +1688,12 @@ audio {
 @keyframes fadeIn {
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .flower--1, .flower--2, .flower--3, .flower--4, .flower--5, .flower--6, .flower--7, .flower--8, .flower--9, .flower--10, .flower--11 {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
