@@ -185,6 +185,80 @@ body {
   -webkit-animation-delay: 2.3s;
   animation-delay: 2.3s;
 }
+.flower__leafs--6 {
+  -webkit-animation-delay: 2.6s;
+  animation-delay: 2.6s;
+}
+.flower__leafs--7 {
+  -webkit-animation-delay: 2.9s;
+  animation-delay: 2.9s;
+}
+.flower__leafs--8 {
+  -webkit-animation-delay: 3.2s;
+  animation-delay: 3.2s;
+}
+.flower__leafs--9 {
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+.flower__leafs--10 {
+  -webkit-animation-delay: 3.8s;
+  animation-delay: 3.8s;
+}
+.flower__leafs--11 {
+  -webkit-animation-delay: 4.1s;
+  animation-delay: 4.1s;
+}
+
+.flower--4 {
+    left: 25%;
+    transform: rotate(-10deg);
+    -webkit-animation: moving-flower-3 4s linear infinite;
+    animation: moving-flower-3 4s linear infinite;
+}
+.flower--5 {
+    left: 75%;
+    transform: rotate(10deg);
+    -webkit-animation: moving-flower-2 4s linear infinite;
+    animation: moving-flower-2 4s linear infinite;
+}
+.flower--6 {
+    left: 10%;
+    transform: rotate(-5deg);
+    -webkit-animation: moving-flower-1 4s linear infinite;
+    animation: moving-flower-1 4s linear infinite;
+}
+.flower--7 {
+    left: 90%;
+    transform: rotate(5deg);
+    -webkit-animation: moving-flower-2 4s linear infinite;
+    animation: moving-flower-2 4s linear infinite;
+}
+.flower--8 {
+    left: 40%;
+    transform: rotate(-15deg);
+    -webkit-animation: moving-flower-3 4s linear infinite;
+    animation: moving-flower-3 4s linear infinite;
+}
+.flower--9 {
+    left: 60%;
+    transform: rotate(15deg);
+    -webkit-animation: moving-flower-1 4s linear infinite;
+    animation: moving-flower-1 4s linear infinite;
+}
+.flower--10 {
+    left: 20%;
+    transform: rotate(-10deg);
+    -webkit-animation: moving-flower-2 4s linear infinite;
+    animation: moving-flower-2 4s linear infinite;
+}
+.flower--11 {
+    left: 80%;
+    transform: rotate(10deg);
+    -webkit-animation: moving-flower-3 4s linear infinite;
+    animation: moving-flower-3 4s linear infinite;
+}
+
 .flower__leafs::after {
   content: "";
   position: absolute;
@@ -1584,7 +1658,7 @@ audio {
 
 .message-container {
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -1606,4 +1680,3 @@ audio {
     opacity: 1;
   }
 }
-
