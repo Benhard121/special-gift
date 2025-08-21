@@ -1640,56 +1640,239 @@ audio {
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
 }
 
-/* Menyesuaikan ukuran kotak putih */
-.box {
-  width: 200px; /* Lebar kotak putih */
-  height: 50px; /* Tinggi kotak putih */
-  background-color: rgba(255, 255, 255, 0.5); /* Warna kotak putih dengan transparansi */
-  margin: auto; /* Menengahkan kotak putih */
-  margin-top: 100px; /* Menambahkan jarak atas */
-  padding: 10px; /* Padding kotak putih */
-  border-radius: 5px; /* Border radius kotak putih */
+/* Enhanced text styling */
+.glow-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 
+    0 0 5px #ff69b4, 
+    0 0 10px #ff69b4, 
+    0 0 15px #ff69b4,
+    0 0 20px #ff1493,
+    0 0 25px #ff1493;
+  animation: pulseGlow 2s ease-in-out infinite alternate;
 }
 
+.subtitle {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  color: #e0e0e0;
+  margin-top: 10px;
+  text-shadow: 0 0 5px rgba(255, 192, 203, 0.8);
+  animation: fadeInUp 2s ease-in-out 0.5s forwards;
+  opacity: 0;
+}
+
+@keyframes pulseGlow {
+  from {
+    text-shadow: 
+      0 0 5px #ff69b4, 
+      0 0 10px #ff69b4, 
+      0 0 15px #ff69b4,
+      0 0 20px #ff1493,
+      0 0 25px #ff1493;
+  }
+  to {
+    text-shadow: 
+      0 0 10px #ff69b4, 
+      0 0 20px #ff69b4, 
+      0 0 30px #ff69b4,
+      0 0 40px #ff1493,
+      0 0 50px #ff1493;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating stars animation */
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.stars::before,
+.stars::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  box-shadow: 
+    100px 100px white, 200px 150px white, 300px 200px white,
+    400px 50px white, 500px 300px white, 600px 100px white,
+    700px 250px white, 800px 180px white, 900px 220px white,
+    150px 300px white, 250px 50px white, 350px 150px white,
+    450px 250px white, 550px 100px white, 650px 200px white,
+    750px 50px white, 850px 300px white, 950px 150px white;
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* Aurora effect */
+.aurora {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 105, 180, 0.1) 0%,
+    rgba(138, 43, 226, 0.1) 25%,
+    rgba(0, 191, 255, 0.1) 50%,
+    rgba(50, 205, 50, 0.1) 75%,
+    rgba(255, 105, 180, 0.1) 100%
+  );
+  animation: aurora 8s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes aurora {
+  0% { opacity: 0.2; transform: translateX(-50px); }
+  50% { opacity: 0.4; transform: translateX(50px); }
+  100% { opacity: 0.2; transform: translateX(-50px); }
+}
+
+/* Floating hearts */
+.floating-hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.floating-hearts::before,
+.floating-hearts::after {
+  content: '💗';
+  position: absolute;
+  font-size: 20px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-hearts::before {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.floating-hearts::after {
+  top: 60%;
+  right: 15%;
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Enhanced container positioning */
 .-container {
   position: absolute;
-  top: 10%; /* coba 15% atau 18% supaya pas di tengah atas, di bawah audio */
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   width: 100%;
+  z-index: 100;
 }
 
-
-.-container p {
-  font-family: 'Dancing Script', cursive;
-  font-size: 2.5rem;
-  color: #fff;
-  font-weight: bold;
-  text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4;
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out 1s forwards;
-}
-
-.-container h2 {
-  font-size: 1.5rem;
-  color: #fff;
-  font-weight: bold;
-  text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4;
-  margin-top: 10px;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
+/* Responsive design */
 @media (max-width: 768px) {
+  .glow-text {
+    font-size: 2.2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
   .flower--1, .flower--2, .flower--3, .flower--4, .flower--5, .flower--6, .flower--7, .flower--8, .flower--9, .flower--10, .flower--11 {
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+/* Enhanced night background */
+.night {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  filter: blur(0.1vmin);
+  background-image: radial-gradient(
+      ellipse at top,
+      transparent 0%,
+      var(--dark-color)
+    ),
+    radial-gradient(
+      ellipse at bottom,
+      var(--dark-color),
+      rgba(145, 233, 255, 0.2)
+    ),
+    repeating-linear-gradient(
+      220deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      189deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      148deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
 }
