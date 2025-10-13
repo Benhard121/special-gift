@@ -82,6 +82,25 @@ body::before {
 .greetings > span:nth-child(12) {
     animation-delay: 2.2s ;
 }
+
+.cg4 {
+    margin-top: 20px;
+    font-size: 4rem;
+}
+
+.cg4 > span {
+    animation: glow 2.5s ease-in-out infinite;
+}
+
+.cg4 > span:nth-child(1) {
+    animation-delay: 0s;
+}
+.cg4 > span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.cg4 > span:nth-child(3) {
+    animation-delay: 0.6s;
+}
 .description{
     font-size: 1.5rem;
     margin-bottom: 20px;
