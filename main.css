@@ -1785,12 +1785,14 @@ body {
 
 /*# sourceMappingURL=main.css.map */
 
-/* Mengatur kontrol audio di bagian paling atas */
+/* Mengatur kontrol audio di bagian paling atas - hidden */
 audio {
   position: absolute;
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Menyesuaikan ukuran kotak putih */
