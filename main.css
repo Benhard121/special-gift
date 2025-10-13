@@ -1908,8 +1908,8 @@ body {
   top: 50%;
   transform: translateY(-50%);
   z-index: 20;
-  max-width: 200px;
-  height: 600px; /* Fixed height for scrolling */
+  max-width: 250px;
+  height: 750px; /* Increased height for larger images */
   overflow: hidden;
 }
 
@@ -1933,7 +1933,7 @@ body {
 
 .gallery-image {
   width: 100%;
-  height: 200px; /* Fixed height for consistent scrolling */
+  height: 250px; /* Increased height for larger images */
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
