@@ -11,13 +11,24 @@
 <body class="container">
   <div class="night"></div>
   <div class="stars"></div>
-  <div class="romantic-message">Kamu adalah bintang di malam hari, Clara! ✨💖</div>
-  <div class="image-gallery">
-      <img src="cg4.jpg" alt="Beautiful Memory" class="gallery-image">
-      <img src="cg4(2).jpg" alt="Beautiful Memory 2" class="gallery-image">
-      <img src="cg4(3).jpg" alt="Beautiful Memory 3" class="gallery-image">
-      <img src="cg4(4).jpg" alt="Beautiful Memory 4" class="gallery-image">
-      <img src="cg4(5).jpg" alt="Beautiful Memory 5" class="gallery-image">
+  <div class="romantic-message"> Kolose 2:7 ✨💖</div>
+  <div class="romantic-message"> "Hendaklah kamu berakar di dalam Dia dan dibangun di atas Dia, hendaklah kamu bertambah teguh dalam iman yang telah diajarkan kepadamu, dan hendaklah hatimu melimpah dengan syukur." ✨💖</div>
+
+  <div class="image-gallery left">
+      <img src="cg4.jpg" alt="Beautiful Memory" class="gallery-image" data-text="Kenangan indah bersama kamu">
+      <img src="cg4(2).jpg" alt="Beautiful Memory 2" class="gallery-image" data-text="Momen spesial yang tak terlupakan">
+      <img src="cg4(3).jpg" alt="Beautiful Memory 3" class="gallery-image" data-text="Senyuman yang selalu membuatku bahagia">
+  </div>
+  <div class="image-gallery right">
+      <img src="cg4(4).jpg" alt="Beautiful Memory 4" class="gallery-image" data-text="Waktu yang berharga bersama">
+      <img src="cg4(5).jpg" alt="Beautiful Memory 5" class="gallery-image" data-text="Cinta yang selalu berkembang">
+  </div>
+
+  <!-- Modal for zoomed images -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="imageText" class="modal-text"></div>
   </div>
   <div class="flowers">
       <div class="flower flower--1">
