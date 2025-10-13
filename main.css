@@ -11,18 +11,18 @@
 }
 
 body {
-   display: flex;
-   align-items: flex-end;
-   justify-content: center;
-   min-height: 100vh;
-   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('flowers.png');
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-   overflow: hidden;
-   perspective: 1000px;
-   position: relative;
- }
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Yesus.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    perspective: 1000px;
+    position: relative;
+  }
 
  body::before {
    content: '';
