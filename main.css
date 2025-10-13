@@ -11,14 +11,33 @@
 }
 
 body {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: var(--dark-color);
-  overflow: hidden;
-  perspective: 1000px;
-}
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   min-height: 100vh;
+   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('flowers.png');
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   overflow: hidden;
+   perspective: 1000px;
+   position: relative;
+ }
+
+ body::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: linear-gradient(45deg,
+     rgba(57, 198, 214, 0.1) 0%,
+     rgba(255, 107, 157, 0.1) 50%,
+     rgba(167, 254, 238, 0.1) 100%);
+   backdrop-filter: blur(1px) brightness(1.1) contrast(1.1) saturate(1.2);
+   z-index: 0;
+ }
 
 .night {
   position: fixed;
@@ -63,9 +82,10 @@ body {
 }
 
 .flowers {
-  position: relative;
-  transform: scale(0.9);
-}
+   position: relative;
+   transform: scale(0.9);
+   z-index: 10;
+ }
 
 .flower {
   position: absolute;
@@ -1553,7 +1573,130 @@ body {
 .container * {
   -webkit-animation-play-state: paused !important;
   animation-play-state: paused !important;
-} /*# sourceMappingURL=main.css.map */
+}
+
+/* Enhanced background with stars */
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.stars::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, #eee, transparent),
+    radial-gradient(2px 2px at 40px 70px, #fff, transparent),
+    radial-gradient(1px 1px at 90px 40px, #eee, transparent),
+    radial-gradient(1px 1px at 130px 80px, #fff, transparent),
+    radial-gradient(2px 2px at 160px 30px, #ddd, transparent);
+  background-repeat: repeat;
+  background-size: 200px 100px;
+  animation: twinkle 4s ease-in-out infinite alternate;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+/* Romantic message overlay */
+.romantic-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  z-index: 15;
+  animation: fadeIn 3s ease-in-out;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+  100% { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* Enhanced flower colors */
+.flower__leaf {
+  background-image: linear-gradient(to top, #54b8aa, #a7ffee, #ff6b9d);
+}
+
+.flower__line {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2),
+      transparent,
+      rgba(255, 255, 255, 0.2)
+    ),
+    linear-gradient(to top, transparent 10%, #14757a, #39c6d6, #ff6b9d);
+}
+
+/* Floating particles */
+.flowers::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(255, 107, 157, 0.3) 1px, transparent 1px),
+    radial-gradient(circle at 30% 40%, rgba(57, 198, 214, 0.3) 1px, transparent 1px),
+    radial-gradient(circle at 50% 60%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+    radial-gradient(circle at 70% 80%, rgba(167, 254, 238, 0.3) 1px, transparent 1px),
+    radial-gradient(circle at 90% 10%, rgba(255, 107, 157, 0.3) 1px, transparent 1px);
+  background-size: 100px 100px;
+  animation: float 10s linear infinite;
+  z-index: 8;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh); }
+  100% { transform: translateY(-100vh); }
+}
+
+/* Image gallery styling */
+.image-gallery {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 20;
+  max-width: 200px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0.9;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 12px 35px rgba(57, 198, 214, 0.5);
+  opacity: 1;
+}
+
+/*# sourceMappingURL=main.css.map */
 
 /* Mengatur kontrol audio di bagian paling atas */
 audio {
