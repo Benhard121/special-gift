@@ -177,9 +177,81 @@ body {
   animation: blooming-leaf-left var(--fl-speed) 2.1s backwards;
 }
 .flower--3 .flower__line__leaf--4 {
-  -webkit-animation: blooming-leaf-left var(--fl-speed) 1.9s backwards;
-  animation: blooming-leaf-left var(--fl-speed) 1.9s backwards;
-}
+   -webkit-animation: blooming-leaf-left var(--fl-speed) 1.9s backwards;
+   animation: blooming-leaf-left var(--fl-speed) 1.9s backwards;
+ }
+.flower--4 {
+   left: 60%;
+   top: 20%;
+   transform: rotate(45deg) scale(0.8);
+   -webkit-animation: moving-flower-4 5s linear infinite;
+   animation: moving-flower-4 5s linear infinite;
+ }
+.flower--4 .flower__line {
+   height: 50vmin;
+   -webkit-animation-delay: 1.2s;
+   animation-delay: 1.2s;
+ }
+.flower--4 .flower__line__leaf--1 {
+   -webkit-animation: blooming-leaf-right var(--fl-speed) 2.8s backwards;
+   animation: blooming-leaf-right var(--fl-speed) 2.8s backwards;
+ }
+.flower--4 .flower__line__leaf--2 {
+   -webkit-animation: blooming-leaf-right var(--fl-speed) 2.6s backwards;
+   animation: blooming-leaf-right var(--fl-speed) 2.6s backwards;
+ }
+.flower--4 .flower__line__leaf--3 {
+   -webkit-animation: blooming-leaf-left var(--fl-speed) 2.4s backwards;
+   animation: blooming-leaf-left var(--fl-speed) 2.4s backwards;
+ }
+.flower--4 .flower__line__leaf--4 {
+   -webkit-animation: blooming-leaf-left var(--fl-speed) 2.2s backwards;
+   animation: blooming-leaf-left var(--fl-speed) 2.2s backwards;
+ }
+.flower--5 {
+   left: 20%;
+   top: 30%;
+   transform: rotate(-30deg) scale(0.9);
+   -webkit-animation: moving-flower-5 6s linear infinite;
+   animation: moving-flower-5 6s linear infinite;
+ }
+.flower--5 .flower__line {
+   height: 45vmin;
+   -webkit-animation-delay: 1.5s;
+   animation-delay: 1.5s;
+ }
+.flower--5 .flower__line__leaf--1 {
+   -webkit-animation: blooming-leaf-right var(--fl-speed) 3.2s backwards;
+   animation: blooming-leaf-right var(--fl-speed) 3.2s backwards;
+ }
+.flower--5 .flower__line__leaf--2 {
+   -webkit-animation: blooming-leaf-right var(--fl-speed) 3s backwards;
+   animation: blooming-leaf-right var(--fl-speed) 3s backwards;
+ }
+.flower--5 .flower__line__leaf--3 {
+   -webkit-animation: blooming-leaf-left var(--fl-speed) 2.8s backwards;
+   animation: blooming-leaf-left var(--fl-speed) 2.8s backwards;
+ }
+.flower--5 .flower__line__leaf--4 {
+   -webkit-animation: blooming-leaf-left var(--fl-speed) 2.6s backwards;
+   animation: blooming-leaf-left var(--fl-speed) 2.6s backwards;
+ }
+.flower--5 .flower__line__leaf--5 {
+   -webkit-animation: blooming-leaf-right var(--fl-speed) 3.4s backwards;
+   animation: blooming-leaf-right var(--fl-speed) 3.4s backwards;
+ }
+.flower--5 .flower__line__leaf--6 {
+   -webkit-animation: blooming-leaf-left var(--fl-speed) 3.6s backwards;
+   animation: blooming-leaf-left var(--fl-speed) 3.6s backwards;
+ }
+.flower__leafs--4 {
+   -webkit-animation-delay: 2s;
+   animation-delay: 2s;
+ }
+.flower__leafs--5 {
+   -webkit-animation-delay: 2.3s;
+   animation-delay: 2.3s;
+ }
 .flower__leafs {
   position: relative;
   -webkit-animation: blooming-flower 2s backwards;
@@ -496,14 +568,32 @@ body {
   animation: moving-grass 2s linear infinite;
 }
 .flower__grass--2 {
-  left: 2vmin;
-  bottom: 10vmin;
-  transform: scale(0.5) rotate(75deg) rotateX(10deg) rotateY(-200deg);
-  opacity: 0.8;
-  z-index: 0;
-  -webkit-animation: moving-grass--2 1.5s linear infinite;
-  animation: moving-grass--2 1.5s linear infinite;
-}
+   left: 2vmin;
+   bottom: 10vmin;
+   transform: scale(0.5) rotate(75deg) rotateX(10deg) rotateY(-200deg);
+   opacity: 0.8;
+   z-index: 0;
+   -webkit-animation: moving-grass--2 1.5s linear infinite;
+   animation: moving-grass--2 1.5s linear infinite;
+ }
+.flower__grass--3 {
+   left: -10vmin;
+   bottom: 15vmin;
+   transform: scale(0.6) rotate(-60deg) rotateY(30deg);
+   opacity: 0.9;
+   z-index: 15;
+   -webkit-animation: moving-grass--3 2.2s linear infinite;
+   animation: moving-grass--3 2.2s linear infinite;
+ }
+.flower__grass--4 {
+   left: 8vmin;
+   bottom: 8vmin;
+   transform: scale(0.4) rotate(90deg) rotateX(-15deg) rotateY(180deg);
+   opacity: 0.7;
+   z-index: 5;
+   -webkit-animation: moving-grass--4 1.8s linear infinite;
+   animation: moving-grass--4 1.8s linear infinite;
+ }
 .flower__grass--top {
   width: 7vmin;
   height: 10vmin;
@@ -1241,13 +1331,26 @@ body {
   transform: scale(0.8) rotate(2deg);
 }
 .long-g--7 {
-  left: 35vmin;
-  bottom: 20vmin;
-  z-index: -1;
-  filter: blur(0.3vmin);
-  transform: scale(0.6) rotate(2deg);
-  opacity: 0.7;
-}
+   left: 35vmin;
+   bottom: 20vmin;
+   z-index: -1;
+   filter: blur(0.3vmin);
+   transform: scale(0.6) rotate(2deg);
+   opacity: 0.7;
+ }
+.long-g--8 {
+   left: -50vmin;
+   bottom: 30vmin;
+   transform: scale(0.7) rotate(-10deg);
+   opacity: 0.8;
+ }
+.long-g--9 {
+   left: 45vmin;
+   bottom: 35vmin;
+   transform: scale(0.5) rotate(15deg);
+   opacity: 0.6;
+   filter: blur(0.2vmin);
+ }
 .long-g .leaf {
   --w: 15vmin;
   --h: 40vmin;
@@ -1537,23 +1640,95 @@ body {
   }
 }
 @-webkit-keyframes moving-grass--2 {
-  0%,
-  100% {
-    transform: scale(0.5) rotate(75deg) rotateX(10deg) rotateY(-200deg);
-  }
-  50% {
-    transform: scale(0.5) rotate(79deg) rotateX(10deg) rotateY(-200deg);
-  }
-}
+   0%,
+   100% {
+     transform: scale(0.5) rotate(75deg) rotateX(10deg) rotateY(-200deg);
+   }
+   50% {
+     transform: scale(0.5) rotate(79deg) rotateX(10deg) rotateY(-200deg);
+   }
+ }
 @keyframes moving-grass--2 {
-  0%,
-  100% {
-    transform: scale(0.5) rotate(75deg) rotateX(10deg) rotateY(-200deg);
-  }
-  50% {
-    transform: scale(0.5) rotate(79deg) rotateX(10deg) rotateY(-200deg);
-  }
-}
+   0%,
+   100% {
+     transform: scale(0.5) rotate(75deg) rotateX(10deg) rotateY(-200deg);
+   }
+   50% {
+     transform: scale(0.5) rotate(79deg) rotateX(10deg) rotateY(-200deg);
+   }
+ }
+@-webkit-keyframes moving-grass--3 {
+   0%,
+   100% {
+     transform: scale(0.6) rotate(-60deg) rotateY(30deg);
+   }
+   50% {
+     transform: scale(0.6) rotate(-62deg) rotateY(30deg);
+   }
+ }
+@keyframes moving-grass--3 {
+   0%,
+   100% {
+     transform: scale(0.6) rotate(-60deg) rotateY(30deg);
+   }
+   50% {
+     transform: scale(0.6) rotate(-62deg) rotateY(30deg);
+   }
+ }
+@-webkit-keyframes moving-grass--4 {
+   0%,
+   100% {
+     transform: scale(0.4) rotate(90deg) rotateX(-15deg) rotateY(180deg);
+   }
+   50% {
+     transform: scale(0.4) rotate(92deg) rotateX(-15deg) rotateY(180deg);
+   }
+ }
+@keyframes moving-grass--4 {
+   0%,
+   100% {
+     transform: scale(0.4) rotate(90deg) rotateX(-15deg) rotateY(180deg);
+   }
+   50% {
+     transform: scale(0.4) rotate(92deg) rotateX(-15deg) rotateY(180deg);
+   }
+ }
+@-webkit-keyframes moving-flower-4 {
+   0%,
+   100% {
+     transform: rotate(45deg) scale(0.8);
+   }
+   50% {
+     transform: rotate(47deg) scale(0.8);
+   }
+ }
+@keyframes moving-flower-4 {
+   0%,
+   100% {
+     transform: rotate(45deg) scale(0.8);
+   }
+   50% {
+     transform: rotate(47deg) scale(0.8);
+   }
+ }
+@-webkit-keyframes moving-flower-5 {
+   0%,
+   100% {
+     transform: rotate(-30deg) scale(0.9);
+   }
+   50% {
+     transform: rotate(-32deg) scale(0.9);
+   }
+ }
+@keyframes moving-flower-5 {
+   0%,
+   100% {
+     transform: rotate(-30deg) scale(0.9);
+   }
+   50% {
+     transform: rotate(-32deg) scale(0.9);
+   }
+ }
 .growing-grass {
   -webkit-animation: growing-grass-ans 1s 2s backwards;
   animation: growing-grass-ans 1s 2s backwards;
@@ -1611,44 +1786,53 @@ body {
 
 /* Romantic message overlay */
 .romantic-message-container {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 15;
-  animation: fadeIn 3s ease-in-out;
-  text-align: center;
-  max-width: 90%;
-}
+   position: fixed;
+   top: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 15;
+   animation: fadeIn 3s ease-in-out;
+   text-align: center;
+   max-width: 90%;
+ }
 
 .verse-reference {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
-  background: rgba(0, 0, 0, 0.6);
-  padding: 10px 20px;
-  border-radius: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  margin-bottom: 10px;
-  backdrop-filter: blur(8px);
-  display: inline-block;
-}
+   color: #fff;
+   font-size: 1.5rem;
+   font-weight: bold;
+   text-shadow: 0 0 15px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 107, 157, 0.6);
+   background: rgba(0, 0, 0, 0.7);
+   padding: 15px 25px;
+   border-radius: 25px;
+   border: 2px solid rgba(255, 255, 255, 0.5);
+   margin-bottom: 15px;
+   backdrop-filter: blur(10px);
+   display: inline-block;
+   box-shadow: 0 8px 32px rgba(255, 107, 157, 0.3);
+   animation: message-glow 2s ease-in-out infinite alternate;
+ }
 
 .verse-content {
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: 500;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  background: rgba(0, 0, 0, 0.5);
-  padding: 15px 25px;
-  border-radius: 25px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  line-height: 1.6;
-  backdrop-filter: blur(5px);
-  display: inline-block;
-  max-width: 100%;
-}
+   color: #fff;
+   font-size: 1.1rem;
+   font-weight: 500;
+   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(167, 254, 238, 0.5);
+   background: rgba(0, 0, 0, 0.6);
+   padding: 20px 30px;
+   border-radius: 30px;
+   border: 2px solid rgba(255, 255, 255, 0.4);
+   line-height: 1.6;
+   backdrop-filter: blur(8px);
+   display: inline-block;
+   max-width: 100%;
+   box-shadow: 0 8px 32px rgba(167, 254, 238, 0.3);
+   animation: message-glow 2.5s ease-in-out infinite alternate-reverse;
+ }
+
+@keyframes message-glow {
+   0% { box-shadow: 0 8px 32px rgba(255, 107, 157, 0.3); }
+   100% { box-shadow: 0 8px 32px rgba(255, 107, 157, 0.6), 0 0 40px rgba(255, 107, 157, 0.4); }
+ }
 
 @keyframes fadeIn {
   0% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
@@ -1657,37 +1841,61 @@ body {
 
 /* Enhanced flower colors */
 .flower__leaf {
-  background-image: linear-gradient(to top, #54b8aa, #a7ffee, #ff6b9d);
-}
+   background-image: linear-gradient(to top, #54b8aa, #a7ffee, #ff6b9d, #ffb3ba);
+ }
 
 .flower__line {
-  background-image: linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0.2),
-      transparent,
-      rgba(255, 255, 255, 0.2)
-    ),
-    linear-gradient(to top, transparent 10%, #14757a, #39c6d6, #ff6b9d);
-}
+   background-image: linear-gradient(
+       to left,
+       rgba(0, 0, 0, 0.2),
+       transparent,
+       rgba(255, 255, 255, 0.2)
+     ),
+     linear-gradient(to top, transparent 10%, #14757a, #39c6d6, #ff6b9d, #ffb3ba);
+ }
+
+/* Additional glow effects */
+.flower__leafs::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   transform: translate(-50%, -100%);
+   width: 12vmin;
+   height: 12vmin;
+   background: radial-gradient(circle, rgba(255, 107, 157, 0.6) 0%, rgba(167, 254, 238, 0.4) 50%, transparent 100%);
+   border-radius: 50%;
+   filter: blur(8vmin);
+   z-index: -1;
+   animation: flower-glow 3s ease-in-out infinite alternate;
+ }
+
+@keyframes flower-glow {
+   0% { opacity: 0.3; transform: translate(-50%, -100%) scale(0.8); }
+   100% { opacity: 0.7; transform: translate(-50%, -100%) scale(1.2); }
+ }
 
 /* Floating particles */
 .flowers::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image:
-    radial-gradient(circle at 10% 20%, rgba(255, 107, 157, 0.3) 1px, transparent 1px),
-    radial-gradient(circle at 30% 40%, rgba(57, 198, 214, 0.3) 1px, transparent 1px),
-    radial-gradient(circle at 50% 60%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
-    radial-gradient(circle at 70% 80%, rgba(167, 254, 238, 0.3) 1px, transparent 1px),
-    radial-gradient(circle at 90% 10%, rgba(255, 107, 157, 0.3) 1px, transparent 1px);
-  background-size: 100px 100px;
-  animation: float 10s linear infinite;
-  z-index: 8;
-}
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image:
+     radial-gradient(circle at 10% 20%, rgba(255, 107, 157, 0.4) 1px, transparent 1px),
+     radial-gradient(circle at 30% 40%, rgba(57, 198, 214, 0.4) 1px, transparent 1px),
+     radial-gradient(circle at 50% 60%, rgba(255, 255, 255, 0.4) 1px, transparent 1px),
+     radial-gradient(circle at 70% 80%, rgba(167, 254, 238, 0.4) 1px, transparent 1px),
+     radial-gradient(circle at 90% 10%, rgba(255, 107, 157, 0.4) 1px, transparent 1px),
+     radial-gradient(circle at 20% 70%, rgba(255, 215, 0, 0.3) 1px, transparent 1px),
+     radial-gradient(circle at 80% 30%, rgba(138, 43, 226, 0.3) 1px, transparent 1px),
+     radial-gradient(circle at 40% 90%, rgba(255, 69, 0, 0.3) 1px, transparent 1px);
+   background-size: 80px 80px;
+   animation: float 12s linear infinite;
+   z-index: 8;
+ }
 
 @keyframes float {
   0% { transform: translateY(100vh); }
