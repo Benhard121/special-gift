@@ -1610,30 +1610,44 @@ body {
 }
 
 /* Romantic message overlay */
-.romantic-message {
+.romantic-message-container {
   position: fixed;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   z-index: 15;
   animation: fadeIn 3s ease-in-out;
+  text-align: center;
+  max-width: 90%;
+}
+
+.verse-reference {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 10px;
+  backdrop-filter: blur(8px);
+  display: inline-block;
+}
+
+.verse-content {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   background: rgba(0, 0, 0, 0.5);
   padding: 15px 25px;
   border-radius: 25px;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  max-width: 80%;
-  text-align: center;
+  line-height: 1.6;
   backdrop-filter: blur(5px);
-}
-
-.romantic-message:nth-child(2) {
-  top: 80px;
-  font-size: 1rem;
-  padding: 12px 20px;
+  display: inline-block;
+  max-width: 100%;
 }
 
 @keyframes fadeIn {
