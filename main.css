@@ -1999,6 +1999,16 @@ body {
   animation-play-state: running !important;
 }
 
+.flowers {
+  position: relative;
+  transform: scale(0.9);
+  z-index: 10;
+  overflow: hidden;
+  max-height: 100vh;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 /* Enhanced background with stars */
 .stars {
   position: fixed;
