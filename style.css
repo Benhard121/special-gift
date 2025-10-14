@@ -194,20 +194,6 @@ body::before {
     100% { box-shadow: 0 4px 15px rgba(57, 198, 214, 0.4); }
 }
 
-@media screen and (max-width:574px){
-    .greetings{
-        display: block;
-        font-size: 3rem;
-        font-weight: 500;
-        text-align: center;
-    }
-    .description{
-        font-size: 1rem;
-    }
-    
-    .button a{
-        font-size: .5rem;
-    }
 /* Hidden audio controls */
 audio {
   position: absolute;
@@ -217,4 +203,57 @@ audio {
   opacity: 0;
   pointer-events: none;
 }
+
+@media screen and (max-width: 768px) {
+    .greetings {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+    .cg4 {
+        font-size: 2.5rem;
+        margin-top: 15px;
+    }
+    .description {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    .description li {
+        margin: 8px 0;
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+    .button button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    .button a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .greetings {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .cg4 {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+    .description {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .description li {
+        margin: 5px 0;
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+    .button button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    .button a {
+        font-size: 0.9rem;
+    }
 }
