@@ -2291,5 +2291,93 @@ audio {
   margin: auto; /* Menengahkan kotak putih */
   margin-top: 100px; /* Menambahkan jarak atas */
   padding: 10px; /* Padding kotak putih */
+/* Twinkling elements */
+.twinkling-elements {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.star, .love {
+  position: absolute;
+  font-size: 2rem;
+  animation: twinkle-float 4s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+.star--1 {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.star--2 {
+  top: 30%;
+  left: 70%;
+  animation-delay: 1s;
+}
+
+.star--3 {
+  top: 50%;
+  left: 10%;
+  animation-delay: 2s;
+}
+
+.star--4 {
+  top: 70%;
+  left: 80%;
+  animation-delay: 3s;
+}
+
+.star--5 {
+  top: 90%;
+  left: 40%;
+  animation-delay: 4s;
+}
+
+.love--1 {
+  top: 20%;
+  left: 60%;
+  animation-delay: 0.5s;
+}
+
+.love--2 {
+  top: 40%;
+  left: 30%;
+  animation-delay: 1.5s;
+}
+
+.love--3 {
+  top: 60%;
+  left: 90%;
+  animation-delay: 2.5s;
+}
+
+.love--4 {
+  top: 80%;
+  left: 15%;
+  animation-delay: 3.5s;
+}
+
+.love--5 {
+  top: 35%;
+  left: 45%;
+  animation-delay: 4.5s;
+}
+
+@keyframes twinkle-float {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1.2);
+  }
+}
   border-radius: 5px; /* Border radius kotak putih */
 }
