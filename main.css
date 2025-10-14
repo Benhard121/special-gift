@@ -82,27 +82,43 @@ body {
 }
 
 .flowers {
-   position: relative;
-   transform: scale(0.9);
-   z-index: 10;
-   overflow: hidden;
-   max-height: 100vh;
-   display: block !important;
-   visibility: visible !important;
-   opacity: 1 !important;
-   }
+  position: relative;
+  transform: scale(0.9);
+  z-index: 10;
+  overflow: hidden;
+  max-height: 100vh;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  }
 
 .flower {
-   display: block !important;
-   visibility: visible !important;
-   opacity: 1 !important;
-   }
+  position: absolute;
+  bottom: 10vmin;
+  transform-origin: bottom center;
+  z-index: 10;
+  --fl-speed: 0.8s;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  }
 
 .flower__grass {
-   display: block !important;
-   visibility: visible !important;
-   opacity: 1 !important;
-   }
+  --c: #159faa;
+  --line-w: 1.5vmin;
+  position: absolute;
+  bottom: 12vmin;
+  left: -7vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 20;
+  transform-origin: bottom center;
+  transform: rotate(-48deg) rotateY(40deg);
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  }
 
 .flower {
   position: absolute;
