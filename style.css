@@ -237,30 +237,30 @@ audio {
 }
 
 .arrow--top {
-    top: 60%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-100px);
+    transform: translateX(-50%) translateY(-120px) rotate(180deg);
     animation-delay: 0s;
 }
 
 .arrow--left {
     top: 50%;
-    left: 30%;
-    transform: translateY(-50%) translateX(-50px);
+    left: 50%;
+    transform: translateX(-120px) translateY(-50%) rotate(90deg);
     animation-delay: 0.5s;
 }
 
 .arrow--right {
     top: 50%;
-    right: 30%;
-    transform: translateY(-50%) translateX(50px);
+    left: 50%;
+    transform: translateX(120px) translateY(-50%) rotate(-90deg);
     animation-delay: 1s;
 }
 
 .arrow--bottom {
-    bottom: 40%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(100px);
+    transform: translateX(-50%) translateY(120px) rotate(0deg);
     animation-delay: 1.5s;
 }
 
