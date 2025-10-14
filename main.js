@@ -1,5 +1,6 @@
 onload = () => {
   document.body.classList.remove("container");
+  console.log("Container class removed, animations should start");
 };
 
 // Modal functionality for images
