@@ -275,28 +275,29 @@ audio {
     }
 }
 
-/* Different arrow styles */
+/* Different arrow styles - all pointing toward center */
 .arrow--top {
     color: #ff6b9d;
     filter: drop-shadow(0 0 5px rgba(255, 107, 157, 0.5));
+    transform: translateX(-50%) translateY(-100px) rotate(180deg);
 }
 
 .arrow--left {
     color: #39c6d6;
     filter: drop-shadow(0 0 5px rgba(57, 198, 214, 0.5));
-    transform: rotate(-90deg);
+    transform: translateY(-50%) translateX(-100px) rotate(90deg);
 }
 
 .arrow--right {
     color: #ffb3ba;
     filter: drop-shadow(0 0 5px rgba(255, 179, 186, 0.5));
-    transform: rotate(90deg);
+    transform: translateY(-50%) translateX(100px) rotate(-90deg);
 }
 
 .arrow--bottom {
     color: #ffeaa7;
     filter: drop-shadow(0 0 5px rgba(255, 234, 167, 0.5));
-    transform: rotate(180deg);
+    transform: translateX(-50%) translateY(100px) rotate(0deg);
 }
 
 /* Responsive arrows */
