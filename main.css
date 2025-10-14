@@ -85,8 +85,8 @@ body {
   position: relative;
   transform: scale(0.9);
   z-index: 10;
-  overflow: hidden;
-  max-height: 100vh;
+  height: 100vh;
+  overflow: visible;
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
@@ -1299,11 +1299,19 @@ body {
     transform-origin: bottom left;
     transform: rotate(-20deg) scale(0);
   }
+  100% {
+    transform-origin: bottom left;
+    transform: rotate(-20deg) scale(1);
+  }
 }
 @keyframes growing-grass-ans--1 {
   0% {
     transform-origin: bottom left;
     transform: rotate(-20deg) scale(0);
+  }
+  100% {
+    transform-origin: bottom left;
+    transform: rotate(-20deg) scale(1);
   }
 }
 .flower__grass__leaf--2 {
@@ -1319,11 +1327,19 @@ body {
     transform-origin: bottom right;
     transform: rotate(10deg) scale(0);
   }
+  100% {
+    transform-origin: bottom right;
+    transform: rotate(10deg) scale(1);
+  }
 }
 @keyframes growing-grass-ans--2 {
   0% {
     transform-origin: bottom right;
     transform: rotate(10deg) scale(0);
+  }
+  100% {
+    transform-origin: bottom right;
+    transform: rotate(10deg) scale(1);
   }
 }
 .flower__grass__leaf--3 {
@@ -1339,11 +1355,19 @@ body {
     transform-origin: bottom left;
     transform: rotate(-18deg) rotateX(-20deg) scale(0);
   }
+  100% {
+    transform-origin: bottom left;
+    transform: rotate(-18deg) rotateX(-20deg) scale(1);
+  }
 }
 @keyframes growing-grass-ans--3 {
   0% {
     transform-origin: bottom left;
     transform: rotate(-18deg) rotateX(-20deg) scale(0);
+  }
+  100% {
+    transform-origin: bottom left;
+    transform: rotate(-18deg) rotateX(-20deg) scale(1);
   }
 }
 .flower__grass__leaf--4 {
@@ -1359,11 +1383,19 @@ body {
     transform-origin: bottom right;
     transform: rotate(2deg) scale(0);
   }
+  100% {
+    transform-origin: bottom right;
+    transform: rotate(2deg) scale(1);
+  }
 }
 @keyframes growing-grass-ans--4 {
   0% {
     transform-origin: bottom right;
     transform: rotate(2deg) scale(0);
+  }
+  100% {
+    transform-origin: bottom right;
+    transform: rotate(2deg) scale(1);
   }
 }
 .flower__grass__leaf--5 {
@@ -1379,11 +1411,19 @@ body {
     transform-origin: bottom left;
     transform: rotate(-24deg) rotateX(-20deg) scale(0);
   }
+  100% {
+    transform-origin: bottom left;
+    transform: rotate(-24deg) rotateX(-20deg) scale(1);
+  }
 }
 @keyframes growing-grass-ans--5 {
   0% {
     transform-origin: bottom left;
     transform: rotate(-24deg) rotateX(-20deg) scale(0);
+  }
+  100% {
+    transform-origin: bottom left;
+    transform: rotate(-24deg) rotateX(-20deg) scale(1);
   }
 }
 .flower__grass__leaf--6 {
@@ -1399,11 +1439,19 @@ body {
     transform-origin: bottom right;
     transform: rotate(10deg) scale(0);
   }
+  100% {
+    transform-origin: bottom right;
+    transform: rotate(10deg) scale(1);
+  }
 }
 @keyframes growing-grass-ans--6 {
   0% {
     transform-origin: bottom right;
     transform: rotate(10deg) scale(0);
+  }
+  100% {
+    transform-origin: bottom right;
+    transform: rotate(10deg) scale(1);
   }
 }
 .flower__grass__leaf--7 {
@@ -1419,11 +1467,19 @@ body {
     transform-origin: bottom left;
     transform: rotate(-10deg) scale(0);
   }
+  100% {
+    transform-origin: bottom left;
+    transform: rotate(-10deg) scale(1);
+  }
 }
 @keyframes growing-grass-ans--7 {
   0% {
     transform-origin: bottom left;
     transform: rotate(-10deg) scale(0);
+  }
+  100% {
+    transform-origin: bottom left;
+    transform: rotate(-10deg) scale(1);
   }
 }
 .flower__grass__leaf--8 {
@@ -1439,11 +1495,19 @@ body {
     transform-origin: bottom right;
     transform: rotate(10deg) scale(0);
   }
+  100% {
+    transform-origin: bottom right;
+    transform: rotate(10deg) scale(1);
+  }
 }
 @keyframes growing-grass-ans--8 {
   0% {
     transform-origin: bottom right;
     transform: rotate(10deg) scale(0);
+  }
+  100% {
+    transform-origin: bottom right;
+    transform: rotate(10deg) scale(1);
   }
 }
 .flower__grass__overlay {
@@ -1659,10 +1723,16 @@ body {
   0% {
     transform: rotateY(-180deg) scale(0);
   }
+  100% {
+    transform: rotateY(-180deg) scale(1);
+  }
 }
 @keyframes flower__g-front__leaf-left-ans-2 {
   0% {
     transform: rotateY(-180deg) scale(0);
+  }
+  100% {
+    transform: rotateY(-180deg) scale(1);
   }
 }
 .flower__g-front__leaf-wrapper--5,
@@ -2135,6 +2205,10 @@ body {
     transform: scale(0);
     opacity: 0;
   }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 @-webkit-keyframes light-ans {
   0% {
@@ -2515,6 +2589,9 @@ body {
   0% {
     transform: scale(0);
   }
+  100% {
+    transform: scale(1);
+  }
 }
 .container * {
   -webkit-animation-play-state: running !important;
@@ -2807,101 +2884,3 @@ audio {
   pointer-events: none;
 }
 
-/* Menyesuaikan ukuran kotak putih */
-.box {
-  width: 200px; /* Lebar kotak putih */
-  height: 50px; /* Tinggi kotak putih */
-  background-color: rgba(255, 255, 255, 0.5); /* Warna kotak putih dengan transparansi */
-  margin: auto; /* Menengahkan kotak putih */
-  margin-top: 100px; /* Menambahkan jarak atas */
-  padding: 10px; /* Padding kotak putih */
-/* Twinkling elements */
-.twinkling-elements {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 3;
-}
-
-.star, .love {
-  position: absolute;
-  font-size: 2rem;
-  animation: twinkle-float 4s ease-in-out infinite;
-  opacity: 0.7;
-}
-
-.star--1 {
-  top: 10%;
-  left: 20%;
-  animation-delay: 0s;
-}
-
-.star--2 {
-  top: 30%;
-  left: 70%;
-  animation-delay: 1s;
-}
-
-.star--3 {
-  top: 50%;
-  left: 10%;
-  animation-delay: 2s;
-}
-
-.star--4 {
-  top: 70%;
-  left: 80%;
-  animation-delay: 3s;
-}
-
-.star--5 {
-  top: 90%;
-  left: 40%;
-  animation-delay: 4s;
-}
-
-.love--1 {
-  top: 20%;
-  left: 60%;
-  animation-delay: 0.5s;
-}
-
-.love--2 {
-  top: 40%;
-  left: 30%;
-  animation-delay: 1.5s;
-}
-
-.love--3 {
-  top: 60%;
-  left: 90%;
-  animation-delay: 2.5s;
-}
-
-.love--4 {
-  top: 80%;
-  left: 15%;
-  animation-delay: 3.5s;
-}
-
-.love--5 {
-  top: 35%;
-  left: 45%;
-  animation-delay: 4.5s;
-}
-
-@keyframes twinkle-float {
-  0%, 100% {
-    opacity: 0.3;
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(-10px) scale(1.2);
-  }
-}
-  border-radius: 5px; /* Border radius kotak putih */
-}
