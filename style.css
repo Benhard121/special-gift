@@ -208,4 +208,13 @@ body::before {
     .button a{
         font-size: .5rem;
     }
+/* Hidden audio controls */
+audio {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+}
 }
