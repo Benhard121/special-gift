@@ -1995,19 +1995,8 @@ body {
   }
 }
 .container * {
-  -webkit-animation-play-state: running !important;
-  animation-play-state: running !important;
-}
-
-.flowers {
-  position: relative;
-  transform: scale(0.9);
-  z-index: 10;
-  overflow: hidden;
-  max-height: 100vh;
-  opacity: 1 !important;
-  visibility: visible !important;
-  display: block !important;
+  -webkit-animation-play-state: paused !important;
+  animation-play-state: paused !important;
 }
 
 /* Enhanced background with stars */
