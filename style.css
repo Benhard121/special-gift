@@ -217,6 +217,124 @@ audio {
         font-size: 1.2rem;
         margin-bottom: 15px;
     }
+/* Arrows pointing to button */
+.arrows-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.arrow {
+    position: absolute;
+    font-size: 2rem;
+    color: #39c6d6;
+    animation: arrow-bounce 2s ease-in-out infinite;
+    text-shadow: 0 0 10px rgba(57, 198, 214, 0.5);
+}
+
+.arrow--top {
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100px);
+    animation-delay: 0s;
+}
+
+.arrow--left {
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%) translateX(-50px);
+    animation-delay: 0.5s;
+}
+
+.arrow--right {
+    top: 50%;
+    right: 30%;
+    transform: translateY(-50%) translateX(50px);
+    animation-delay: 1s;
+}
+
+.arrow--bottom {
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    animation-delay: 1.5s;
+}
+
+@keyframes arrow-bounce {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translateY(-10px) scale(1.1);
+        opacity: 1;
+    }
+}
+
+/* Different arrow styles */
+.arrow--top {
+    color: #ff6b9d;
+    filter: drop-shadow(0 0 5px rgba(255, 107, 157, 0.5));
+}
+
+.arrow--left {
+    color: #39c6d6;
+    filter: drop-shadow(0 0 5px rgba(57, 198, 214, 0.5));
+    transform: rotate(-90deg);
+}
+
+.arrow--right {
+    color: #ffb3ba;
+    filter: drop-shadow(0 0 5px rgba(255, 179, 186, 0.5));
+    transform: rotate(90deg);
+}
+
+.arrow--bottom {
+    color: #ffeaa7;
+    filter: drop-shadow(0 0 5px rgba(255, 234, 167, 0.5));
+    transform: rotate(180deg);
+}
+
+/* Responsive arrows */
+@media screen and (max-width: 768px) {
+    .arrow {
+        font-size: 1.5rem;
+    }
+    .arrow--top {
+        transform: translateX(-50%) translateY(-80px);
+    }
+    .arrow--left {
+        transform: translateY(-50%) translateX(-40px);
+    }
+    .arrow--right {
+        transform: translateY(-50%) translateX(40px);
+    }
+    .arrow--bottom {
+        transform: translateX(-50%) translateY(80px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .arrow {
+        font-size: 1.2rem;
+    }
+    .arrow--top {
+        transform: translateX(-50%) translateY(-60px);
+    }
+    .arrow--left {
+        transform: translateY(-50%) translateX(-30px);
+    }
+    .arrow--right {
+        transform: translateY(-50%) translateX(30px);
+    }
+    .arrow--bottom {
+        transform: translateX(-50%) translateY(60px);
+    }
+}
     .description li {
         margin: 8px 0;
         padding: 8px 15px;
